@@ -84,6 +84,128 @@
 
 // RETURNING WITH ARROW FUNCTION
 
+// VARIABLE SCOPE IN FUNCTION
+
+// function testAvailability(x){
+//     console.log("Available here:",x);
+// }
+// testAvailability("Hi!");
+// console.log("Not Available here:",x);
+
+// function testAvailability(y){
+//     let y="Local Variable";
+//     console.log("Available here:",y);
+// }
+// testAvailability("Hi!");
+// console.log("Not Available here:",y);
+
+// function testAvailability(y){
+//          let y="I'll return";
+//          console.log("Available here:",y);
+//          return y;
+//      }
+// let z=testAvailability();
+// console.log("Outside the function:",z);
+// console.log("Not available here:",y);
+
+// function doingStuff(){
+//     if(true){
+//         var x="local";
+//     }
+//     console.log(x);
+// }
+// doingStuff();
+
+// function doingStuff(){
+//     if(true){
+//         console.log(x);
+//         let x="local";
+//     }
+// }
+// doingStuff();
+
+// function doingStuff(){
+//     if(true){
+//         console.log(x);
+//         var x="local";
+//     }
+// }
+// doingStuff();
+
+// function doingStuff(){
+//     if(true){
+//         console.log(x);
+//         const x="local";
+//     }
+// }
+// doingStuff();
+
+// GLOBAL VARIABLE
+// let globalVar ="Accessible everywhere!";
+// console.log("Outside function:",globalVar);
+// function creatingNewScope(x){
+//     console.log("Access to global variable inside function:",globalVar);
+// }
+// creaingNewScope("Local variable"); 
+//  console.log("Access to global vars outside function",globalVar);
+
+// let x="global";
+// function doingStuff(){
+//         let x="local";
+//         console.log(x);
+//     }
+// doingStuff();
+
+// let x="global";
+// function doingStuff(){
+//          x="local";
+//         console.log(x);
+//     }
+// doingStuff();
+
+// let x="global";
+// function doingStuff(){
+//         console.log(x);
+//     }
+// doingStuff("param");
+
+// function confuseReader(){
+//     x="Guess my scope...";
+//     console.log("Inside the function:",x)
+// }
+// confuseReader();
+// console.log("Outside the function:",x);
+
+// IMMEDIATELY INVOKED FUNCTION EXPRESSION
+// (function(){
+//     console.log("IIFE!");
+// })();
+
+// (()=>{
+//     console.log("run right away");
+// })();
+
+// RECURSIVE FUNCTION
+
+// function getRecursive(nr){
+//     console.log(nr);
+//     if(nr>0){
+//     getRecursive(--nr);
+// }}
+// getRecursive(3);
+
+function logRecursive(nr){
+    console.log("Started function :",nr);
+    if(nr>0){
+    logRecursive(nr-1);
+}
+else{
+    console.log("Done with recursion: ");
+}
+console.log("Ended function :",nr);}
+logRecursive(3);
+
+
 
 
 
