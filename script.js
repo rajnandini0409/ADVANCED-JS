@@ -194,20 +194,72 @@
 // }}
 // getRecursive(3);
 
-function logRecursive(nr){
-    console.log("Started function :",nr);
-    if(nr>0){
-    logRecursive(nr-1);
-}
-else{
-    console.log("Done with recursion: ");
-}
-console.log("Ended function :",nr);}
-logRecursive(3);
+// function getRecursive(nr){
+//     if(nr>0){
+//     getRecursive(--nr);
+// } console.log(nr);
+// }
+// getRecursive(3);
 
+// function logRecursive(nr){
+//     console.log("Started function :",nr);
+//     if(nr>0){
+//     logRecursive(nr-1);
+// }
+// else{
+//     console.log("Done with recursion: ");
+// }
+// console.log("Ended function :",nr);}
+// logRecursive(3);
 
+// NESTED FUNCTION
 
+// function doOuterFunctionStuff(nr){
+//     console.log("Outer Function");
+//     doInnerFunctionStuff(nr);
+//     function doInnerFunctionStuff(x){
+//         console.log(x+7);
+//         console.log("I can access outer variables:",nr);
+//     }
+// }
+// doOuterFunctionStuff(2);
 
+// FUNCTION CALLBACKS
+
+// let functionVariable = function(){
+//     console.log("Not so secret though.");
+// };
+// functionVariable();
+// function doFlexibleStuff(executeStuff){
+//     executeStuff();
+//     console.log("Inside doingFlexibleStuffFunction.");
+// }
+// doFlexibleStuff(functionVariable);
+
+// let youGotThis =function(){
+//     console.log("You're doing really well,keep going!");
+// };
+// setTimeout(youGotThis,1000);
+
+// let youGotThis =function(){
+//     console.log("You're doing really well,keep going!");
+// };
+// setInterval(youGotThis,1000);
+
+// (function(){
+//     console.log("Welcome");
+// })();
+// (function(){
+//     let firstname="Laurence";
+// })();
+// let result =(function(){
+//     let firstname="Laurence";
+//     return firstname;
+// })();
+// console.log(result);
+// (function(firstname){
+//     console.log("My name is " + firstname)
+// })("Laurence");
 
 
 
